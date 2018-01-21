@@ -18,7 +18,7 @@ const (
 	// Operators
 	ASSIGN   = "="
 	PLUS     = "+"
-	MINUS		 = "-"
+	MINUS    = "-"
 	BANG     = "!"
 	ASTERISK = "*"
 	SLASH    = "/"
@@ -26,6 +26,8 @@ const (
 	LT = "<"
 	GT = ">"
 
+	EQ     = "=="
+	NOT_EQ = "!="
 
 	// Delimiters
 	COMMA     = ","
@@ -46,7 +48,7 @@ const (
 	RETURN   = "RETURN"
 )
 
-var keywords = map[string]TokenType {
+var keywords = map[string]TokenType{
 	"fn":     FUNCTION,
 	"let":    LET,
 	"true":   TRUE,
